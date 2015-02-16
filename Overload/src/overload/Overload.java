@@ -1,17 +1,12 @@
 package overload;
 
 public class Overload{
-	public static int[] makeArray(int size){
-		int[] newArray = new int[size];
-		for(int i = 0; i < newArray.length; i++){
-			newArray[i] = i;
-		}
-		return newArray;
+	public static void email(String title, String address, String text){
+		System.out.println("『"+ address + "』に以下のメールを送信しました");
+		System.out.println("件名:" + title);
+		System.out.println("本文" + text);
 	}
-	public static void main (String[] args){
-		int[] array = makeArray(3);
-		for (int i : array){
-			System.out.println(i);
-		}
+	public static void main(String[] args){
+		email("明日は○◯","XXXX@mail.com","本文を表示");
 	}
 }

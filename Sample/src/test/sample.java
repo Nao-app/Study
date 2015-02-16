@@ -9,6 +9,7 @@ public class sample {
 			System.out.println("０〜９の数字を入力してください");
 			int num = new java.util.Scanner(System.in).nextInt();
 			if (ans == num){
+				
 				System.out.println("あたり");
 				break;
 			}else{

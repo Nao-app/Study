@@ -4,7 +4,6 @@ public class Hero {
 	String name;
 	int hp;
 	Sword sword;
-	void attack();
 	void run(){
 		System.out.println(this.name + "は、転んだ");
 		System.out.println("GAMEOVER");

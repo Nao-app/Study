@@ -2,14 +2,13 @@ package error;
 
 public class main {
 	public static void main(String args[]){
-		String s = null;
+		String s = "三";
 		try{
-			System.out.println(s.length());
-		}catch(NullPointerException e){
-			System.out.println("ーースタックトレース（ここから）ーー");
+			Integer.parseInt(s);
+		}catch(NumberFormatException e){
+			System.out.println("例外をキャッチしましたNumberFormatException");
 			e.printStackTrace();
-		}finally{
-			System.out.println("ーースタックトレース（ここまで）ーー");
 		}
+		
 	}
 }
